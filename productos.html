@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos eléctricos CHINIELEC - Cables, tableros, iluminación, protección y más.">
+    <title>Productos | CHINIELEC - Materiales Eléctricos</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <style>
+        /* Estilos específicos para página de productos */
+        .productos-page {
+            padding-top: 100px;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .page-header h1 {
+            color: var(--white);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-xs);
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .categorias-section {
+            background: var(--off-white);
+            padding: var(--spacing-md) 0;
+            position: sticky;
+            top: 70px;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .categorias-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--spacing-xs);
+        }
+        
+        .categoria-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: 0.6rem 1.2rem;
+            background: var(--white);
+            border: 2px solid var(--light-gray);
+            border-radius: var(--radius-full);
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+        
+        .categoria-btn:hover {
+            border-color: var(--primary-light);
+            color: var(--primary-dark);
+        }
+        
+        .categoria-btn.active {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            color: var(--white);
+        }
+        
+        .categoria-btn i {
+            font-size: 0.9rem;
+        }
+        
+        .productos-section {
+            padding: var(--spacing-lg) 0 var(--spacing-xl);
+        }
+        
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+        }
+        
+        .no-products {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: var(--spacing-xl);
+            color: var(--medium-gray);
+        }
+        
+        .no-products i {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-md);
+            opacity: 0.5;
+        }
+        
+        .productos-count {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--medium-gray);
+        }
+        
+        @media screen and (max-width: 767px) {
+            .categorias-section {
+                top: 60px;
+            }
+            
+            .categoria-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .categoria-btn span {
+                display: none;
+            }
+            
+            .categoria-btn i {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body class="productos-page">
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="CHINIELEC Logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="index.html#sectores" class="nav-link">Sectores</a></li>
+                    <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:03413232946" class="header-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>0341-3232946</span>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestros Productos</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <span>Productos</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias-section">
+        <div class="container">
+            <div class="categorias-filter">
+                <!-- Se genera dinámicamente desde productos.js -->
+            </div>
+        </div>
+    </section>
+
+    <section class="productos-section">
+        <div class="container">
+            <div class="productos-grid">
+                <!-- Se genera dinámicamente desde productos.js -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="CHINIELEC">
+                </div>
+                <p>Comercialización mayorista de materiales eléctricos y electrónicos.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/chinielec/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/chinielec/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5493413232946" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>0341-3232946</span></div>
+                <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>chinielec@gmail.com</span></div>
+                <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Rosario, Santa Fe</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CHINIELEC - Materiales Eléctricos.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5493413232946?text=Hola! Quisiera consultar por productos" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/productos.js"></script>
+</body>
+</html>
