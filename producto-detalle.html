@@ -348,7 +348,7 @@
             
             container.innerHTML = 
                 '<div class="producto-imagen">' +
-                    '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" onerror="this.src=\'assets/images/productos/placeholder.jpg\'">' +
+                    '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" onerror="this.onerror=null; this.src=\'assets/images/productos/placeholder.svg\'">' +
                 '</div>' +
                 '<div class="producto-info">' +
                     '<span class="producto-categoria">' + categoryName + '</span>' +

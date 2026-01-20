@@ -231,7 +231,7 @@ function renderProductos(productosArray) {
     productosArray.forEach(function(producto, index) {
         html += '<article class="product-card reveal" style="animation-delay: ' + (index * 0.1) + 's">' +
             '<div class="product-image">' +
-            '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" onerror="this.src=\'assets/images/productos/placeholder.jpg\'">' +
+            '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" onerror="handleImageError(this)">' +
             '<span class="product-category">' + getCategoryName(producto.categoria) + '</span>' +
             '</div>' +
             '<div class="product-content">' +
@@ -246,6 +246,12 @@ function renderProductos(productosArray) {
 
     container.innerHTML = html;
     initScrollReveal();
+}
+
+// Manejar error de imagen sin loop infinito
+function handleImageError(img) {
+    img.onerror = null; // Evita loop infinito
+    img.src = 'assets/images/productos/placeholder.svg';
 }
 
 // Inicializar filtros
@@ -291,7 +297,7 @@ function renderProductosDestacados() {
     destacados.forEach(function(producto, index) {
         html += '<article class="product-card reveal" style="animation-delay: ' + (index * 0.1) + 's">' +
             '<div class="product-image">' +
-            '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" onerror="this.src=\'assets/images/productos/placeholder.jpg\'">' +
+            '<img src="' + producto.imagen + '" alt="' + producto.nombre + '" onerror="handleImageError(this)">' +
             '<span class="product-category">' + getCategoryName(producto.categoria) + '</span>' +
             '</div>' +
             '<div class="product-content">' +
