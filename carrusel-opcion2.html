@@ -12,7 +12,7 @@
     <meta property="og:title" content="CHINIELEC | Materiales Eléctricos en Rosario">
     <meta property="og:description" content="Venta mayorista de materiales eléctricos. Más de 8 años proveyendo a constructoras, electricistas e industrias.">
 
-    <title>CHINIELEC | Materiales Eléctricos en Rosario</title>
+    <title>CHINIELEC | Carrusel Opción 2 - Flechas Laterales</title>
 
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +23,127 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        /* === OPCIÓN 2: CARRUSEL CON FLECHAS LATERALES === */
+        .brands-v2 {
+            background: var(--white);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .brands-carousel-container {
+            position: relative;
+            padding: 0 60px;
+        }
+
+        .brands-swiper-v2 {
+            padding: var(--spacing-md) 0;
+        }
+
+        .brands-swiper-v2 .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            padding: var(--spacing-md);
+            background: var(--off-white);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-normal);
+        }
+
+        .brands-swiper-v2 .swiper-slide:hover {
+            background: var(--white);
+            box-shadow: var(--shadow-md);
+            transform: scale(1.05);
+        }
+
+        .brands-swiper-v2 .swiper-slide img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+            transition: all var(--transition-normal);
+            opacity: 0.7;
+        }
+
+        .brands-swiper-v2 .swiper-slide:hover img {
+            opacity: 1;
+        }
+
+        /* Flechas de navegación */
+        .swiper-button-next-v2,
+        .swiper-button-prev-v2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-md);
+        }
+
+        .swiper-button-prev-v2 {
+            left: 0;
+        }
+
+        .swiper-button-next-v2 {
+            right: 0;
+        }
+
+        .swiper-button-next-v2:hover,
+        .swiper-button-prev-v2:hover {
+            background: linear-gradient(135deg, var(--primary-medium), var(--primary-light));
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .swiper-button-next-v2.swiper-button-disabled,
+        .swiper-button-prev-v2.swiper-button-disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        /* Banner indicador de versión */
+        .version-banner {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+        }
+
+        .version-banner a {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .brands-carousel-container {
+                padding: 0 45px;
+            }
+
+            .swiper-button-next-v2,
+            .swiper-button-prev-v2 {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Banner de versión -->
+    <div class="version-banner">
+        📌 OPCIÓN 2: Carrusel con flechas laterales | <a href="index.html">Ver Opción 1 (puntitos)</a>
+    </div>
+
     <header class="header">
         <div class="header-container">
             <a href="index.html" class="logo">
@@ -149,27 +268,38 @@
         </div>
     </section>
 
-    <!-- Sección Nuestras Marcas -->
-    <section id="marcas" class="section brands">
+    <!-- OPCIÓN 2: Sección Nuestras Marcas con Flechas Laterales -->
+    <section id="marcas" class="section brands-v2">
         <div class="container">
             <h2 class="section-title">Nuestras Marcas</h2>
             <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
                 Trabajamos con las mejores marcas del mercado eléctrico nacional e internacional.
             </p>
-            <div class="swiper brands-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/images/marcas/schneider.png" alt="Schneider Electric"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/jeluz.jpg" alt="Jeluz"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/ledvance.jpg" alt="Ledvance"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/genrod.png" alt="Genrod"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/steck.png" alt="Steck"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/tbcin.png" alt="TBCin"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/zoloda.png" alt="Zoloda"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/wentinck.png" alt="Wentinck"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/tecnica.png" alt="Técnica"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/elece.png" alt="Elece"></div>
+            <div class="brands-carousel-container">
+                <!-- Flecha izquierda -->
+                <div class="swiper-button-prev-v2">
+                    <i class="fas fa-chevron-left"></i>
                 </div>
-                <div class="swiper-pagination"></div>
+                
+                <div class="swiper brands-swiper-v2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/images/marcas/schneider.png" alt="Schneider Electric"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/jeluz.jpg" alt="Jeluz"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/ledvance.jpg" alt="Ledvance"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/genrod.png" alt="Genrod"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/steck.png" alt="Steck"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/tbcin.png" alt="TBCin"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/zoloda.png" alt="Zoloda"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/wentinck.png" alt="Wentinck"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/tecnica.png" alt="Técnica"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/elece.png" alt="Elece"></div>
+                    </div>
+                </div>
+
+                <!-- Flecha derecha -->
+                <div class="swiper-button-next-v2">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -314,49 +444,40 @@
         </a>
     </div>
 
-    <!-- Swiper JS para carrusel de marcas (cargar antes de main.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        // Inicializar carrusel de marcas cuando el DOM esté listo
-        document.addEventListener('DOMContentLoaded', function() {
-            const brandsSwiper = new Swiper('.brands-swiper', {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                loop: true,
-                grabCursor: true,
-                speed: 600,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    dynamicBullets: true,
-                },
-                breakpoints: {
-                    480: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    640: {
-                        slidesPerView: 3,
-                        spaceBetween: 25,
-                    },
-                    768: {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                    },
-                    1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                    },
-                }
-            });
-        });
-    </script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/productos.js"></script>
+    <!-- Swiper JS para carrusel de marcas -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // OPCIÓN 2: Carrusel con flechas laterales
+        const brandsSwiperV2 = new Swiper('.brands-swiper-v2', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-v2',
+                prevEl: '.swiper-button-prev-v2',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINIELEC - Opción 2 Carrusel Marcas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* ===== OPCIÓN 2: Carrusel con flechas laterales ===== */
+        .brands-v2 {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .brands-v2 .section-title {
+            margin-bottom: 1rem;
+        }
+
+        .brands-carousel-wrapper {
+            position: relative;
+            padding: 0 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brands-swiper-v2 {
+            padding: 2rem 0;
+        }
+
+        .brands-swiper-v2 .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            padding: 1.5rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .brands-swiper-v2 .swiper-slide:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            border-color: #00b4d8;
+        }
+
+        .brands-swiper-v2 .swiper-slide img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+            transition: all 0.3s ease;
+            opacity: 0.7;
+        }
+
+        .brands-swiper-v2 .swiper-slide:hover img {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        /* Flechas de navegación */
+        .swiper-button-next-v2,
+        .swiper-button-prev-v2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1a3a5c, #0077b6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(26, 58, 92, 0.3);
+        }
+
+        .swiper-button-prev-v2 {
+            left: 0;
+        }
+
+        .swiper-button-next-v2 {
+            right: 0;
+        }
+
+        .swiper-button-next-v2:hover,
+        .swiper-button-prev-v2:hover {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+        }
+
+        /* Barra de progreso en vez de puntos */
+        .swiper-scrollbar-v2 {
+            position: relative;
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            margin-top: 2rem;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-scrollbar-v2 .swiper-scrollbar-drag {
+            background: linear-gradient(90deg, #1a3a5c, #00b4d8);
+            border-radius: 2px;
+        }
+
+        /* Texto decorativo */
+        .brands-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a3a5c, #0077b6);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .brands-count {
+            text-align: center;
+            margin-top: 2rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .brands-count strong {
+            color: #1a3a5c;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .brands-carousel-wrapper {
+                padding: 0 45px;
+            }
+            
+            .swiper-button-next-v2,
+            .swiper-button-prev-v2 {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Container para demo */
+        .demo-container {
+            padding: 2rem;
+            text-align: center;
+            background: #1a3a5c;
+            color: white;
+        }
+
+        .demo-container h1 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .demo-container p {
+            opacity: 0.8;
+            margin-bottom: 0;
+        }
+
+        .demo-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: #00b4d8;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .demo-link:hover {
+            background: #48cae4;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header de demo -->
+    <div class="demo-container">
+        <h1>Opción 2: Carrusel con Flechas</h1>
+        <p>Vista previa del carrusel alternativo para la sección "Nuestras Marcas"</p>
+        <a href="index.html" class="demo-link">← Ver Opción 1 (actual)</a>
+    </div>
+
+    <!-- Sección Nuestras Marcas - OPCIÓN 2 -->
+    <section id="marcas" class="brands-v2">
+        <div class="container">
+            <div class="text-center">
+                <span class="brands-badge">
+                    <i class="fas fa-award"></i> Calidad Certificada
+                </span>
+            </div>
+            <h2 class="section-title">Nuestras Marcas</h2>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto 2rem; color: #6c757d;">
+                Trabajamos con las mejores marcas del mercado eléctrico nacional e internacional.
+            </p>
+            
+            <div class="brands-carousel-wrapper">
+                <!-- Flecha izquierda -->
+                <div class="swiper-button-prev-v2">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                
+                <!-- Carrusel -->
+                <div class="swiper brands-swiper-v2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/images/marcas/schneider.png" alt="Schneider Electric"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/jeluz.jpg" alt="Jeluz"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/ledvance.jpg" alt="Ledvance"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/genrod.png" alt="Genrod"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/steck.png" alt="Steck"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/tbcin.png" alt="TBCin"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/zoloda.png" alt="Zoloda"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/wentinck.png" alt="Wentinck"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/tecnica.png" alt="Técnica"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/elece.png" alt="Elece"></div>
+                    </div>
+                </div>
+                
+                <!-- Flecha derecha -->
+                <div class="swiper-button-next-v2">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <!-- Barra de progreso -->
+            <div class="swiper-scrollbar-v2"></div>
+            
+            <!-- Contador de marcas -->
+            <div class="brands-count">
+                <strong>+10</strong> marcas líderes del mercado
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar carrusel Opción 2 cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            const brandsSwiperV2 = new Swiper('.brands-swiper-v2', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                loop: true,
+                loopAdditionalSlides: 3,
+                grabCursor: true,
+                speed: 600,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-v2',
+                    prevEl: '.swiper-button-prev-v2',
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar-v2',
+                    draggable: true,
+                    hide: false,
+                },
+                breakpoints: {
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 25,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                    },
+                }
+            });
+        });
+    </script>
+</body>
+</html>

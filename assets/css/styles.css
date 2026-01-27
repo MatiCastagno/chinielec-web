@@ -1101,12 +1101,23 @@ ul, ol {
     filter: grayscale(0%);
 }
 
+.brands-swiper .swiper-pagination {
+    position: relative;
+    margin-top: var(--spacing-md);
+}
+
 .brands-swiper .swiper-pagination-bullet {
-    background: var(--primary-medium);
+    width: 10px;
+    height: 10px;
+    background: var(--light-gray);
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .brands-swiper .swiper-pagination-bullet-active {
     background: var(--primary-dark);
+    width: 25px;
+    border-radius: 5px;
 }
 
 /* === SECTORS GRID 3 COLUMNS === */
