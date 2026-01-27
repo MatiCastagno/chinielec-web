@@ -223,7 +223,7 @@ ul, ol {
 }
 
 .logo img {
-    height: 70px;
+    height: 80px;
     width: auto;
 }
 
@@ -1035,4 +1035,90 @@ ul, ol {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* === HERO FEATURES === */
+.hero-features {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-feature i {
+    color: var(--accent);
+}
+
+/* === BRANDS/MARCAS SECTION === */
+.brands {
+    background: var(--white);
+    padding: var(--spacing-xl) 0;
+}
+
+.brands-swiper {
+    padding: var(--spacing-md) 0 var(--spacing-lg);
+}
+
+.brands-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: var(--spacing-sm);
+    background: var(--off-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.brands-swiper .swiper-slide:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.brands-swiper .swiper-slide img {
+    max-width: 100%;
+    max-height: 70px;
+    object-fit: contain;
+    filter: grayscale(30%);
+    transition: filter var(--transition-normal);
+}
+
+.brands-swiper .swiper-slide:hover img {
+    filter: grayscale(0%);
+}
+
+.brands-swiper .swiper-pagination-bullet {
+    background: var(--primary-medium);
+}
+
+.brands-swiper .swiper-pagination-bullet-active {
+    background: var(--primary-dark);
+}
+
+/* === SECTORS GRID 3 COLUMNS === */
+@media (min-width: 769px) {
+    .sectors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-features {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CHINIELEC - Venta mayorista de materiales eléctricos y electrónicos en Rosario. Proveemos a constructoras, retail y hotelería desde 2018.">
+    <meta name="description" content="CHINIELEC - Venta mayorista de materiales eléctricos en Rosario. Proveemos a constructoras, electricistas y hotelería desde 2017.">
     <meta name="keywords" content="materiales eléctricos, rosario, mayorista, cables, iluminación, tableros, santa fe">
     <meta name="author" content="CHINIELEC">
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chinielec.com/">
     <meta property="og:title" content="CHINIELEC | Materiales Eléctricos en Rosario">
-    <meta property="og:description" content="Venta mayorista de materiales eléctricos y electrónicos. Más de 6 años proveyendo a constructoras, retail y hotelería.">
+    <meta property="og:description" content="Venta mayorista de materiales eléctricos. Más de 8 años proveyendo a constructoras, electricistas e industrias.">
 
     <title>CHINIELEC | Materiales Eléctricos en Rosario</title>
 
@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS para carrusel de marcas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -57,13 +59,23 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <span class="hero-badge">
-                    <i class="fas fa-bolt"></i> Desde 2018 en Rosario
+                    <i class="fas fa-bolt"></i> Desde 2017 en Rosario
                 </span>
                 <h1 class="hero-title">Materiales <span>Eléctricos</span> de Calidad</h1>
                 <p class="hero-description">
-                    Somos especialistas en la comercialización mayorista de productos eléctricos y electrónicos. 
-                    Proveemos a constructoras, retail, hotelería y más sectores en todo el país.
+                    Somos especialistas en la comercialización mayorista de productos eléctricos. 
+                    Proveemos a constructoras, electricistas, hotelería y más sectores en todo el país.
                 </p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <span>Cotizaciones sin cargo</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-users"></i>
+                        <span>Atención al público</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
                     <a href="#productos" class="btn btn-primary">
                         <i class="fas fa-box"></i> Ver Productos
@@ -89,16 +101,16 @@
             <div class="about-content reveal">
                 <h2>Quiénes Somos</h2>
                 <p>
-                    <strong>CHINIELEC</strong> es una empresa rosarina fundada en 2018, dedicada a la comercialización 
-                    mayorista de materiales eléctricos y electrónicos de primera calidad.
+                    <strong>CHINIELEC</strong> es una empresa rosarina fundada en 2017, dedicada a la comercialización 
+                    mayorista de materiales eléctricos de primera calidad.
                 </p>
                 <p>
-                    Con más de 6 años de trayectoria en el mercado, nos hemos consolidado como un proveedor 
-                    confiable para empresas constructoras, comercios retail, hoteles y diversos sectores 
+                    Con más de 8 años de trayectoria en el mercado, nos consolidamos como un proveedor 
+                    confiable para empresas constructoras, electricistas, hoteles y diversos sectores 
                     industriales que requieren soluciones eléctricas profesionales.
                 </p>
                 <p>
-                    Nuestro compromiso es brindar productos de calidad, asesoramiento técnico especializado 
+                    Nuestro compromiso es brindar productos de calidad, asesoramiento técnico 
                     y un servicio personalizado que se adapte a las necesidades de cada cliente.
                 </p>
                 <div class="about-features">
@@ -121,7 +133,7 @@
                 </div>
                 <div class="stats">
                     <div class="stat-item">
-                        <div class="stat-number">6<span>+</span></div>
+                        <div class="stat-number">8<span>+</span></div>
                         <div class="stat-label">Años de experiencia</div>
                     </div>
                     <div class="stat-item">
@@ -133,6 +145,31 @@
                         <div class="stat-label">Productos disponibles</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestras Marcas -->
+    <section id="marcas" class="section brands">
+        <div class="container">
+            <h2 class="section-title">Nuestras Marcas</h2>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
+                Trabajamos con las mejores marcas del mercado eléctrico nacional e internacional.
+            </p>
+            <div class="swiper brands-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/marcas/schneider.png" alt="Schneider Electric"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/jeluz.jpg" alt="Jeluz"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/ledvance.jpg" alt="Ledvance"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/genrod.png" alt="Genrod"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/steck.png" alt="Steck"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/tbcin.png" alt="TBCin"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/zoloda.png" alt="Zoloda"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/wentinck.png" alt="Wentinck"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/tecnica.png" alt="Técnica"></div>
+                    <div class="swiper-slide"><img src="assets/images/marcas/elece.png" alt="Elece"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -162,7 +199,7 @@
                 <div class="sector-card reveal">
                     <div class="sector-icon"><i class="fas fa-building"></i></div>
                     <h3>Construcción</h3>
-                    <p>Materiales para obras civiles, edificios residenciales y comerciales.</p>
+                    <p>Materiales eléctricos para obras civiles, edificios residenciales y comerciales.</p>
                 </div>
                 <div class="sector-card reveal">
                     <div class="sector-icon"><i class="fas fa-industry"></i></div>
@@ -170,14 +207,9 @@
                     <p>Soluciones eléctricas para plantas industriales y fábricas.</p>
                 </div>
                 <div class="sector-card reveal">
-                    <div class="sector-icon"><i class="fas fa-store"></i></div>
-                    <h3>Retail</h3>
-                    <p>Productos para locales comerciales y cadenas de retail.</p>
-                </div>
-                <div class="sector-card reveal">
-                    <div class="sector-icon"><i class="fas fa-hotel"></i></div>
-                    <h3>Hotelería</h3>
-                    <p>Instalaciones eléctricas para hoteles y establecimientos turísticos.</p>
+                    <div class="sector-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>Electricistas</h3>
+                    <p>Materiales y herramientas para profesionales del rubro eléctrico.</p>
                 </div>
             </div>
         </div>
@@ -226,8 +258,8 @@
             </div>
             <div class="contact-map reveal">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.2!2d-60.6889!3d-32.9275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDU1JzM5LjAiUyA2MMKwNDEnMjAuMCJX!5e0!3m2!1ses!2sar!4v1699999999999!5m2!1ses!2sar"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.0!2d-60.7220832!3d-32.9333448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b653a8d107246b%3A0xbe22d26de243c455!2sJuan%20Pablo%20II%20459%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1706000000000!5m2!1ses-419!2sar"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
@@ -237,9 +269,9 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="CHINIELEC">
+                    <img src="assets/images/logo.svg" alt="CHINIELEC">
                 </div>
-                <p>Comercialización mayorista de materiales eléctricos y electrónicos. Más de 6 años brindando calidad y servicio en Rosario y todo el país.</p>
+                <p>Comercialización mayorista de materiales eléctricos. Más de 8 años brindando calidad y servicio en Rosario y todo el país.</p>
                 <div class="footer-social">
                     <a href="https://www.instagram.com/chinielec/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/chinielec/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -284,5 +316,34 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/productos.js"></script>
+    <!-- Swiper JS para carrusel de marcas -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar carrusel de marcas
+        const brandsSwiper = new Swiper('.brands-swiper', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 5,
+                },
+            }
+        });
+    </script>
 </body>
 </html>
