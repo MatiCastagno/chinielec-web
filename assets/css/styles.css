@@ -1186,3 +1186,83 @@ ul, ol {
         gap: var(--spacing-xs);
     }
 }
+
+/* ===========================
+   NUESTROS TRABAJOS
+   =========================== */
+.galeria-tableros {
+    padding: var(--spacing-xl) 0;
+    background: var(--off-white);
+}
+
+.galeria-tableros .section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.galeria-tableros .section-header h2 {
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-xs);
+}
+
+.galeria-tableros .section-header p {
+    color: var(--medium-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.galeria-item {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.galeria-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.galeria-item-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    background: #e0e8f0;
+}
+
+.galeria-item-body {
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.galeria-item-body h3 {
+    font-size: 1rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.3rem;
+}
+
+.galeria-item-body p {
+    font-size: 0.875rem;
+    color: var(--medium-gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 991px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}
