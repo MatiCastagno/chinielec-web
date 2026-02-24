@@ -142,6 +142,93 @@
                 margin: 0;
             }
         }
+
+        /* === GALERÍA DE TABLEROS === */
+        .galeria-tableros {
+            padding: var(--spacing-xl) 0;
+            background: var(--off-white);
+        }
+
+        .galeria-tableros .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .galeria-tableros .section-header h2 {
+            color: var(--primary-dark);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .galeria-tableros .section-header p {
+            color: var(--medium-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .galeria-item {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+        }
+
+        .galeria-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .galeria-item-image {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            background: #e0e8f0;
+        }
+
+        .galeria-item-image.placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--medium-gray);
+            font-size: 3rem;
+        }
+
+        .galeria-item-body {
+            padding: var(--spacing-sm) var(--spacing-md);
+        }
+
+        .galeria-item-body h3 {
+            font-size: 1rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .galeria-item-body p {
+            font-size: 0.875rem;
+            color: var(--medium-gray);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Responsive galería */
+        @media screen and (max-width: 991px) {
+            .galeria-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            .galeria-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body class="productos-page">
@@ -196,6 +283,123 @@
         <div class="container">
             <div class="productos-grid">
                 <!-- Se genera dinámicamente desde productos.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTROS TRABAJOS -->
+    <section class="galeria-tableros">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Trabajos</h2>
+                <p>Algunos de los tableros eléctricos industriales que hemos suministrado a nuestros clientes.</p>
+            </div>
+            <div class="galeria-grid">
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero001.jpeg" alt="Tablero Industrial 1">
+                    <div class="galeria-item-body">
+                        <h3>Tablero Industrial de Distribución</h3>
+                        <p>Tablero de distribución eléctrica industrial con protecciones termomagnéticas y diferenciales.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero002.jpeg" alt="Tablero Industrial 2">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Comando Industrial</h3>
+                        <p>Tablero de comando para control de motores y automatismos en planta industrial.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero003.jpeg" alt="Tablero Industrial 3">
+                    <div class="galeria-item-body">
+                        <h3>Tablero Trifásico de Alta Capacidad</h3>
+                        <p>Distribución trifásica con barras de cobre y protecciones de alta capacidad para uso industrial.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero004.jpeg" alt="Tablero Industrial 4">
+                    <div class="galeria-item-body">
+                        <h3>Tablero Seccional Industrial</h3>
+                        <p>Tablero seccional para distribución por zonas dentro de una instalación industrial.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero005.jpeg" alt="Tablero Industrial 5">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Protección y Control</h3>
+                        <p>Tablero equipado con guardamotores, contactores y relés para protección integral de equipos.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero006.jpeg" alt="Tablero Industrial 6">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Automatización</h3>
+                        <p>Tablero de automatización industrial con PLC y variadores de frecuencia integrados.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero007.jpeg" alt="Tablero Industrial 7">
+                    <div class="galeria-item-body">
+                        <h3>Centro de Control de Motores</h3>
+                        <p>Centro de control de motores (CCM) para instalaciones industriales de media y baja tensión.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero008.jpeg" alt="Tablero Industrial 8">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Transferencia</h3>
+                        <p>Tablero de transferencia automática entre red y grupo generador para instalaciones críticas.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero009.jpeg" alt="Tablero Industrial 9">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Baja Tensión</h3>
+                        <p>Tablero principal de baja tensión para subestaciones industriales y comerciales.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero010.jpeg" alt="Tablero Industrial 10">
+                    <div class="galeria-item-body">
+                        <h3>Tablero Exterior Estanco</h3>
+                        <p>Tablero con grado de protección IP65 para instalaciones a la intemperie o en ambientes agresivos.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero011.jpeg" alt="Tablero Industrial 11">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Iluminación Industrial</h3>
+                        <p>Tablero dedicado al control y protección de circuitos de iluminación en nave industrial.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero012.jpeg" alt="Tablero Industrial 12">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Fuerza Motriz</h3>
+                        <p>Tablero de fuerza para alimentación de equipos de producción y maquinaria industrial pesada.</p>
+                    </div>
+                </div>
+
+                <div class="galeria-item">
+                    <img class="galeria-item-image" src="assets/images/productos/tablero013.jpeg" alt="Tablero Industrial 13">
+                    <div class="galeria-item-body">
+                        <h3>Tablero de Compensación de Reactiva</h3>
+                        <p>Banco de capacitores para corrección del factor de potencia en instalaciones industriales.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

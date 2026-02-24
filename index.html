@@ -156,21 +156,36 @@
             <p class="text-center" style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
                 Trabajamos con las mejores marcas del mercado eléctrico nacional e internacional.
             </p>
-            <div class="swiper brands-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/images/marcas/schneider.png" alt="Schneider Electric"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/jeluz.jpg" alt="Jeluz"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/ledvance.jpg" alt="Ledvance"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/genrod.png" alt="Genrod"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/steck.png" alt="Steck"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/tbcin.png" alt="TBCin"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/zoloda.png" alt="Zoloda"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/wentinck.png" alt="Wentinck"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/tecnica.png" alt="Técnica"></div>
-                    <div class="swiper-slide"><img src="assets/images/marcas/elece.png" alt="Elece"></div>
+            <div class="brands-carousel-wrapper">
+                <!-- Flecha izquierda -->
+                <div class="swiper-button-prev-brands">
+                    <i class="fas fa-chevron-left"></i>
                 </div>
-                <div class="swiper-pagination"></div>
+                
+                <!-- Carrusel -->
+                <div class="swiper brands-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/images/marcas/schneider.png" alt="Schneider Electric"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/jeluz.jpg" alt="Jeluz"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/ledvance.jpg" alt="Ledvance"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/genrod.png" alt="Genrod"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/steck.png" alt="Steck"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/tbcin.png" alt="TBCin"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/zoloda.png" alt="Zoloda"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/wentinck.png" alt="Wentinck"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/tecnica.png" alt="Técnica"></div>
+                        <div class="swiper-slide"><img src="assets/images/marcas/elece.png" alt="Elece"></div>
+                    </div>
+                </div>
+                
+                <!-- Flecha derecha -->
+                <div class="swiper-button-next-brands">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
+            
+            <!-- Barra de progreso -->
+            <div class="swiper-scrollbar-brands"></div>
         </div>
     </section>
 
@@ -314,7 +329,7 @@
         </a>
     </div>
 
-    <!-- Swiper JS para carrusel de marcas (cargar antes de main.js) -->
+    <!-- Swiper JS para carrusel de marcas -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         // Inicializar carrusel de marcas cuando el DOM esté listo
@@ -323,6 +338,7 @@
                 slidesPerView: 2,
                 spaceBetween: 20,
                 loop: true,
+                loopAdditionalSlides: 3,
                 grabCursor: true,
                 speed: 600,
                 autoplay: {
@@ -330,10 +346,14 @@
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    dynamicBullets: true,
+                navigation: {
+                    nextEl: '.swiper-button-next-brands',
+                    prevEl: '.swiper-button-prev-brands',
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar-brands',
+                    draggable: true,
+                    hide: false,
                 },
                 breakpoints: {
                     480: {

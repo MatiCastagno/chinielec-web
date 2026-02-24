@@ -1101,23 +1101,76 @@ ul, ol {
     filter: grayscale(0%);
 }
 
-.brands-swiper .swiper-pagination {
+/* Wrapper del carrusel con flechas */
+.brands-carousel-wrapper {
     position: relative;
-    margin-top: var(--spacing-md);
+    padding: 0 60px;
 }
 
-.brands-swiper .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: var(--light-gray);
-    opacity: 1;
+/* Flechas de navegación */
+.swiper-button-next-brands,
+.swiper-button-prev-brands {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(26, 58, 92, 0.3);
 }
 
-.brands-swiper .swiper-pagination-bullet-active {
-    background: var(--primary-dark);
-    width: 25px;
-    border-radius: 5px;
+.swiper-button-prev-brands {
+    left: 0;
+}
+
+.swiper-button-next-brands {
+    right: 0;
+}
+
+.swiper-button-next-brands:hover,
+.swiper-button-prev-brands:hover {
+    background: linear-gradient(135deg, var(--primary-medium), var(--primary-light));
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+}
+
+/* Barra de progreso */
+.swiper-scrollbar-brands {
+    position: relative;
+    height: 4px;
+    background: var(--light-gray);
+    border-radius: 2px;
+    margin-top: var(--spacing-md);
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-scrollbar-brands .swiper-scrollbar-drag {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-light));
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .brands-carousel-wrapper {
+        padding: 0 45px;
+    }
+    
+    .swiper-button-next-brands,
+    .swiper-button-prev-brands {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }
 
 /* === SECTORS GRID 3 COLUMNS === */
