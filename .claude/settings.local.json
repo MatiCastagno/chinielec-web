@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(''c:\\\\proyectos\\\\CHINIELEC\\\\chinielec-web\\\\assets\\\\images\\\\hero\\\\frente-empresa.jpeg''\\); Write-Host $img.Width''x''$img.Height; $img.Dispose\\(\\)\")",
+      "Bash(powershell -Command \"Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(''c:\\\\proyectos\\\\CHINIELEC\\\\chinielec-web\\\\assets\\\\images\\\\hero\\\\frente-empresa.jpeg''\\); Write-Host \\($img.Width.ToString\\(\\) + ''x'' + $img.Height.ToString\\(\\)\\); $img.Dispose\\(\\)\")"
+    ]
+  }
+}

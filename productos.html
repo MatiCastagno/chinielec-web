@@ -143,92 +143,7 @@
             }
         }
 
-        /* === GALERÍA DE TABLEROS === */
-        .galeria-tableros {
-            padding: var(--spacing-xl) 0;
-            background: var(--off-white);
-        }
 
-        .galeria-tableros .section-header {
-            text-align: center;
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .galeria-tableros .section-header h2 {
-            color: var(--primary-dark);
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .galeria-tableros .section-header p {
-            color: var(--medium-gray);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .galeria-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--spacing-md);
-        }
-
-        .galeria-item {
-            background: var(--white);
-            border-radius: var(--radius-md);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-        }
-
-        .galeria-item:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .galeria-item-image {
-            width: 100%;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
-            display: block;
-            background: #e0e8f0;
-        }
-
-        .galeria-item-image.placeholder {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--medium-gray);
-            font-size: 3rem;
-        }
-
-        .galeria-item-body {
-            padding: var(--spacing-sm) var(--spacing-md);
-        }
-
-        .galeria-item-body h3 {
-            font-size: 1rem;
-            color: var(--primary-dark);
-            margin-bottom: 0.3rem;
-        }
-
-        .galeria-item-body p {
-            font-size: 0.875rem;
-            color: var(--medium-gray);
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        /* Responsive galería */
-        @media screen and (max-width: 991px) {
-            .galeria-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media screen and (max-width: 575px) {
-            .galeria-grid {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body class="productos-page">
@@ -291,14 +206,32 @@
         <div class="container footer-container">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="CHINIELEC">
+                    <img src="assets/images/logo.svg" alt="CHINIELEC">
                 </div>
-                <p>Comercialización mayorista de materiales eléctricos y electrónicos.</p>
+                <p>Comercialización mayorista de materiales eléctricos. Más de 8 años brindando calidad y servicio en Rosario y todo el país.</p>
                 <div class="footer-social">
-                    <a href="https://www.instagram.com/chinielec/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/chinielec/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://wa.me/5493413232946" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/chinielec/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/chinielec/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5493413232946" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Productos</h4>
+                <ul class="footer-links">
+                    <li><a href="productos.html">Cables</a></li>
+                    <li><a href="productos.html">Tableros</a></li>
+                    <li><a href="productos.html">Iluminación</a></li>
+                    <li><a href="productos.html">Protección</a></li>
+                </ul>
             </div>
             <div class="footer-section">
                 <h4>Contacto</h4>
@@ -308,7 +241,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 CHINIELEC - Materiales Eléctricos.</p>
+            <p>&copy; 2025 CHINIELEC - Materiales Eléctricos. Todos los derechos reservados.</p>
         </div>
     </footer>
 
