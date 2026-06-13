@@ -4,11 +4,12 @@
 1. [¿Qué es el hosting?](#qué-es-el-hosting)
 2. [Opciones de hosting](#opciones-de-hosting)
 3. [Comparativa de opciones](#comparativa-de-opciones)
-4. [GitHub Pages (RECOMENDADO)](#github-pages-recomendado)
-5. [Netlify (Alternativa)](#netlify-alternativa)
-6. [Vercel (Alternativa)](#vercel-alternativa)
-7. [Hosting tradicional (Pago)](#hosting-tradicional-pago)
-8. [Configuración SSL/HTTPS](#configuración-sslhttps)
+4. [Cloudflare Pages (RECOMENDADO)](#cloudflare-pages-recomendado)
+5. [GitHub Pages (Alternativa)](#github-pages-alternativa)
+6. [Netlify (Alternativa)](#netlify-alternativa)
+7. [Vercel (Alternativa)](#vercel-alternativa)
+8. [Hosting tradicional (Pago)](#hosting-tradicional-pago)
+9. [Configuración SSL/HTTPS](#configuración-sslhttps)
 
 ---
 

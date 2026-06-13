@@ -27,20 +27,20 @@ www.chinielec.com.ar
 
 ## Opciones de dominio recomendadas
 
-### Opción 1: `chinielec.com.ar` (RECOMENDADO para Argentina)
+### Opción 1: `chinielec.com.ar` (RECOMENDADO si el mercado es Argentina)
 | Aspecto | Detalle |
 |---------|---------|
 | **Precio** | ~$5.000 - $8.000 ARS/año |
 | **Proveedor** | NIC Argentina |
-| **Ventajas** | Identidad local, confianza en Argentina |
+| **Ventajas** | Identidad local, mayor confianza en Argentina, más barato a largo plazo |
 | **Requisitos** | CUIT/CUIL argentino |
 
-### Opción 2: `chinielec.com` (RECOMENDADO para escalar)
+### Opción 2: `chinielec.com` (Si se quiere proyección internacional)
 | Aspecto | Detalle |
 |---------|---------|
 | **Precio** | ~$10 - $15 USD/año |
-| **Proveedor** | Namecheap, GoDaddy, Google Domains, Cloudflare |
-| **Ventajas** | Internacional, más profesional |
+| **Proveedor** | Cloudflare Registrar, Namecheap, Porkbun |
+| **Ventajas** | Internacional, percepción más "grande" |
 | **Requisitos** | Tarjeta de crédito/débito |
 
 ### Mi recomendación:
@@ -64,10 +64,10 @@ www.chinielec.com.ar
 | **Cloudflare** | ~$10 USD | Sin markup, incluye protección WHOIS | Panel técnico |
 | **Namecheap** | ~$11 USD | Fácil de usar, buen soporte | Renovación más cara |
 | **Porkbun** | ~$10 USD | Barato, WHOIS gratis | Menos conocido |
-| **Google Domains** | ~$12 USD | Integración Google | Ahora es Squarespace |
+| ~~**Google Domains**~~ | ~~$12 USD~~ | ~~Integración Google~~ | **Discontinuado** — migrado a Squarespace en 2023, no usar |
 | **GoDaddy** | ~$12-20 USD | Muy conocido | Upselling agresivo |
 
-**Mi recomendación**: **Cloudflare** o **Namecheap**
+**Mi recomendación**: **Cloudflare Registrar** (precio de costo, sin markup) o **Namecheap** (más amigable para principiantes).
 
 ---
 
