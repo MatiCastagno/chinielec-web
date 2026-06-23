@@ -8,158 +8,340 @@
 const productos = [
     {
         id: 1,
-        nombre: "Cables Unipolares",
-        categoria: "cables",
-        descripcion: "Cables de cobre de alta calidad para instalaciones eléctricas domiciliarias e industriales.",
-        imagen: "assets/images/productos/cables-unipolares.jpg",
+        nombre: "Contactor SK1 25A",
+        categoria: "control",
+        descripcion: "Contactor tripolar 25A para control de motores y cargas industriales.",
+        imagen: "assets/images/productos/producto001.png",
         caracteristicas: [
-            "Material: Cobre electrolítico",
-            "Diversas secciones disponibles",
-            "Aislación de PVC",
-            "Normas IRAM"
+            "25A / 10HP",
+            "Tripolar",
+            "Montaje riel DIN",
+            "1 NO + 1 NC auxiliar"
         ]
     },
     {
         id: 2,
-        nombre: "Cables Subterráneos",
-        categoria: "cables",
-        descripcion: "Cables especiales para tendido subterráneo, resistentes a la humedad y condiciones adversas.",
-        imagen: "assets/images/productos/cables-subterraneos.jpg",
+        nombre: "Lámpara LED Bulb Sybyd",
+        categoria: "iluminacion",
+        descripcion: "Lámpara LED de alta potencia tipo bulb para iluminación industrial y comercial.",
+        imagen: "assets/images/productos/producto002.png",
         caracteristicas: [
-            "Armadura de acero",
-            "Doble aislación",
-            "Resistente a la humedad",
-            "Certificación vigente"
+            "Alta potencia",
+            "Bajo consumo",
+            "Larga vida útil",
+            "Rosca E27"
         ]
     },
     {
         id: 3,
-        nombre: "Tableros Eléctricos",
-        categoria: "tableros",
-        descripcion: "Tableros para distribución eléctrica, disponibles en diferentes capacidades y configuraciones.",
-        imagen: "assets/images/productos/tableros.jpg",
+        nombre: "Termomagnética Schneider Easy9 1P",
+        categoria: "proteccion",
+        descripcion: "Interruptor termomagnético unipolar Schneider Electric línea Easy9.",
+        imagen: "assets/images/productos/producto003.png",
         caracteristicas: [
-            "Gabinete metálico o PVC",
-            "Diferentes módulos",
-            "Barras de cobre",
-            "Certificados"
+            "1 polo",
+            "Curva C",
+            "4500A de poder de corte",
+            "Montaje riel DIN"
         ]
     },
     {
         id: 4,
-        nombre: "Interruptores Termomagnéticos",
-        categoria: "proteccion",
-        descripcion: "Protección térmica y magnética para circuitos eléctricos residenciales e industriales.",
-        imagen: "assets/images/productos/termomagneticos.jpg",
+        nombre: "Cable Unipolar WTK 2.5mm Verde/Amarillo",
+        categoria: "cables",
+        descripcion: "Cable unipolar flexible WTK 2.5mm color verde/amarillo para instalaciones eléctricas.",
+        imagen: "assets/images/productos/producto004.png",
         caracteristicas: [
-            "Diversas capacidades",
-            "Curva C y D",
-            "Montaje riel DIN",
-            "Primeras marcas"
+            "Sección: 2.5mm²",
+            "Color: Verde/Amarillo",
+            "100 metros",
+            "Normas IRAM"
         ]
     },
     {
         id: 5,
-        nombre: "Disyuntores Diferenciales",
-        categoria: "proteccion",
-        descripcion: "Protección diferencial contra fugas de corriente y electrocución.",
-        imagen: "assets/images/productos/diferenciales.jpg",
+        nombre: "Contactor Schneider TeSys",
+        categoria: "control",
+        descripcion: "Contactor tripolar Schneider Electric línea TeSys para control industrial.",
+        imagen: "assets/images/productos/producto005.png",
         caracteristicas: [
-            "Sensibilidad 30mA",
-            "Bipolar y tetrapolar",
-            "Clase AC y A",
-            "Rearme manual"
+            "Línea TeSys",
+            "Tripolar",
+            "1 NO + 1 NC auxiliar",
+            "Bobina 220V"
         ]
     },
     {
         id: 6,
-        nombre: "Luminarias LED",
-        categoria: "iluminacion",
-        descripcion: "Soluciones de iluminación LED de alta eficiencia para todo tipo de espacios.",
-        imagen: "assets/images/productos/luminarias-led.jpg",
+        nombre: "Diferencial TBCin 2P",
+        categoria: "proteccion",
+        descripcion: "Disyuntor diferencial bipolar TBCin para protección contra fugas de corriente.",
+        imagen: "assets/images/productos/producto006.png",
         caracteristicas: [
-            "Alta eficiencia lumínica",
-            "Bajo consumo",
-            "Larga vida útil",
-            "Diversas potencias"
+            "Bipolar",
+            "Sensibilidad 30mA",
+            "Tipo AC",
+            "Montaje riel DIN"
         ]
     },
     {
         id: 7,
-        nombre: "Tubos LED",
-        categoria: "iluminacion",
-        descripcion: "Tubos LED para reemplazo de fluorescentes tradicionales.",
-        imagen: "assets/images/productos/tubos-led.jpg",
+        nombre: "Termomagnética Steck SDX 2P",
+        categoria: "proteccion",
+        descripcion: "Interruptor termomagnético bipolar Steck línea SDX.",
+        imagen: "assets/images/productos/producto007.png",
         caracteristicas: [
-            "60cm, 120cm, 150cm",
-            "Luz fría y cálida",
-            "Conexión directa",
-            "Ahorro energético"
+            "2 polos",
+            "25A",
+            "4500A de poder de corte",
+            "Montaje riel DIN"
         ]
     },
     {
         id: 8,
-        nombre: "Caños y Ductos",
-        categoria: "canalizacion",
-        descripcion: "Caños de PVC y metálicos para canalización de cables.",
-        imagen: "assets/images/productos/canos.jpg",
+        nombre: "Spot LED AR111 Negro",
+        categoria: "iluminacion",
+        descripcion: "Lámpara LED tipo AR111 en cuerpo negro para artefactos de iluminación decorativa.",
+        imagen: "assets/images/productos/producto008.png",
         caracteristicas: [
-            "PVC y metálicos",
-            "Diversos diámetros",
-            "Accesorios incluidos",
-            "Normas vigentes"
+            "Tipo AR111",
+            "Cuerpo negro",
+            "Base GU10/G53",
+            "Bajo consumo"
         ]
     },
     {
         id: 9,
-        nombre: "Bandejas Portacables",
-        categoria: "canalizacion",
-        descripcion: "Bandejas metálicas para tendido de cables en instalaciones industriales.",
-        imagen: "assets/images/productos/bandejas.jpg",
+        nombre: "Termomagnética Steck SD 1P",
+        categoria: "proteccion",
+        descripcion: "Interruptor termomagnético unipolar Steck línea SD.",
+        imagen: "assets/images/productos/producto009.png",
         caracteristicas: [
-            "Acero galvanizado",
-            "Diversos anchos",
-            "Perforadas y cerradas",
-            "Soportes y accesorios"
+            "1 polo",
+            "50A",
+            "3000A de poder de corte",
+            "Montaje riel DIN"
         ]
     },
     {
         id: 10,
-        nombre: "Tomacorrientes Industriales",
-        categoria: "accesorios",
-        descripcion: "Tomacorrientes y fichas industriales para uso intensivo.",
-        imagen: "assets/images/productos/tomacorrientes.jpg",
+        nombre: "Downlight LED Redondo Negro",
+        categoria: "iluminacion",
+        descripcion: "Panel LED circular de superficie en cuerpo negro para iluminación de interiores.",
+        imagen: "assets/images/productos/producto010.png",
         caracteristicas: [
-            "IP44 / IP67",
-            "16A a 125A",
-            "Monofásicos y trifásicos",
-            "Norma IEC 60309"
+            "Superficie",
+            "Cuerpo negro",
+            "Luz cálida",
+            "Bajo consumo"
         ]
     },
     {
         id: 11,
-        nombre: "Contactores",
-        categoria: "control",
-        descripcion: "Contactores para control de motores y cargas industriales.",
-        imagen: "assets/images/productos/contactores.jpg",
+        nombre: "Lámpara LED Bulb Sybyd Grande",
+        categoria: "iluminacion",
+        descripcion: "Lámpara LED de alta potencia tipo bulb grande para galpones e industrias.",
+        imagen: "assets/images/productos/producto011.png",
         caracteristicas: [
-            "Diversas capacidades",
-            "Bobinas 220V y 380V",
-            "Auxiliares incluidos",
-            "Primeras marcas"
+            "Alta potencia",
+            "Uso industrial",
+            "Larga vida útil",
+            "Rosca E27"
         ]
     },
     {
         id: 12,
-        nombre: "Guardamotores",
-        categoria: "control",
-        descripcion: "Protección integral para motores eléctricos.",
-        imagen: "assets/images/productos/guardamotores.jpg",
+        nombre: "Cable Unipolar Baudmol 2.5mm Celeste",
+        categoria: "cables",
+        descripcion: "Cable unipolar de cobre con aislación PVC Baudmol 2.5mm color celeste.",
+        imagen: "assets/images/productos/producto012.png",
         caracteristicas: [
-            "Regulación de corriente",
-            "Protección térmica",
-            "Protección magnética",
-            "Reset manual"
+            "Sección: 2.5mm²",
+            "Color: Celeste",
+            "100 metros",
+            "No propagador de llama"
+        ]
+    },
+    {
+        id: 13,
+        nombre: "Cable Unipolar Baudmol 2.5mm Verde",
+        categoria: "cables",
+        descripcion: "Cable unipolar de cobre con aislación PVC Baudmol 2.5mm color verde.",
+        imagen: "assets/images/productos/producto013.png",
+        caracteristicas: [
+            "Sección: 2.5mm²",
+            "Color: Verde",
+            "100 metros",
+            "No propagador de llama"
+        ]
+    },
+    {
+        id: 14,
+        nombre: "Diferencial Schneider Easy9 2P",
+        categoria: "proteccion",
+        descripcion: "Disyuntor diferencial bipolar Schneider Electric línea Easy9.",
+        imagen: "assets/images/productos/producto014.png",
+        caracteristicas: [
+            "Bipolar",
+            "Sensibilidad 30mA",
+            "Clase AC",
+            "Montaje riel DIN"
+        ]
+    },
+    {
+        id: 15,
+        nombre: "Spot LED AR111 Blanco",
+        categoria: "iluminacion",
+        descripcion: "Lámpara LED tipo AR111 en cuerpo blanco para artefactos de iluminación.",
+        imagen: "assets/images/productos/producto015.png",
+        caracteristicas: [
+            "Tipo AR111",
+            "Cuerpo blanco",
+            "Base GU10/G53",
+            "Bajo consumo"
+        ]
+    },
+    {
+        id: 16,
+        nombre: "Cable Unipolar WTK 2.5mm Celeste",
+        categoria: "cables",
+        descripcion: "Cable unipolar flexible WTK 2.5mm color celeste para instalaciones eléctricas.",
+        imagen: "assets/images/productos/producto016.png",
+        caracteristicas: [
+            "Sección: 2.5mm²",
+            "Color: Celeste",
+            "100 metros",
+            "Normas IRAM"
+        ]
+    },
+    {
+        id: 17,
+        nombre: "Cable Unipolar WTK 2.5mm Marrón",
+        categoria: "cables",
+        descripcion: "Cable unipolar flexible WTK 2.5mm color marrón para instalaciones eléctricas.",
+        imagen: "assets/images/productos/producto017.png",
+        caracteristicas: [
+            "Sección: 2.5mm²",
+            "Color: Marrón",
+            "100 metros",
+            "Normas IRAM"
+        ]
+    },
+    {
+        id: 18,
+        nombre: "Cable Unipolar Baudmol 2.5mm Marrón",
+        categoria: "cables",
+        descripcion: "Cable unipolar de cobre con aislación PVC Baudmol 2.5mm color marrón.",
+        imagen: "assets/images/productos/producto018.png",
+        caracteristicas: [
+            "Sección: 2.5mm²",
+            "Color: Marrón",
+            "100 metros",
+            "No propagador de llama"
+        ]
+    },
+    {
+        id: 19,
+        nombre: "Spot LED AR111 Espejado",
+        categoria: "iluminacion",
+        descripcion: "Lámpara LED tipo AR111 con reflector espejado para iluminación direccional.",
+        imagen: "assets/images/productos/producto019.png",
+        caracteristicas: [
+            "Tipo AR111",
+            "Reflector espejado",
+            "Iluminación dirigida",
+            "Base G53"
+        ]
+    },
+    {
+        id: 20,
+        nombre: "Borneras de Riel DIN",
+        categoria: "accesorios",
+        descripcion: "Borneras de conexión para montaje en riel DIN, ideales para tableros eléctricos.",
+        imagen: "assets/images/productos/producto020.png",
+        caracteristicas: [
+            "Montaje riel DIN",
+            "Conexión a tornillo",
+            "Para tableros",
+            "Diversas secciones"
+        ]
+    },
+    {
+        id: 21,
+        nombre: "Downlight LED Redondo Blanco",
+        categoria: "iluminacion",
+        descripcion: "Panel LED circular de superficie en cuerpo blanco para iluminación de interiores.",
+        imagen: "assets/images/productos/producto021.png",
+        caracteristicas: [
+            "Superficie",
+            "Cuerpo blanco",
+            "Luz cálida",
+            "Bajo consumo"
+        ]
+    },
+    {
+        id: 22,
+        nombre: "Diferencial Schneider Easy9 4P",
+        categoria: "proteccion",
+        descripcion: "Disyuntor diferencial tetrapolar Schneider Electric línea Easy9.",
+        imagen: "assets/images/productos/producto022.png",
+        caracteristicas: [
+            "4 polos",
+            "Sensibilidad 30mA",
+            "Clase AC",
+            "Montaje riel DIN"
+        ]
+    },
+    {
+        id: 23,
+        nombre: "Reflector LED 50W Peytrod IP65",
+        categoria: "iluminacion",
+        descripcion: "Reflector LED 50W Peytrod resistente a la intemperie, ideal para exteriores.",
+        imagen: "assets/images/productos/producto023.png",
+        caracteristicas: [
+            "50W",
+            "IP65",
+            "Para exteriores",
+            "Alta eficiencia"
+        ]
+    },
+    {
+        id: 24,
+        nombre: "Termomagnética Schneider Easy9 2P",
+        categoria: "proteccion",
+        descripcion: "Interruptor termomagnético bipolar Schneider Electric línea Easy9.",
+        imagen: "assets/images/productos/producto024.png",
+        caracteristicas: [
+            "2 polos",
+            "25A",
+            "4500A de poder de corte",
+            "Montaje riel DIN"
+        ]
+    },
+    {
+        id: 25,
+        nombre: "Diferencial Steck SDR 4P",
+        categoria: "proteccion",
+        descripcion: "Disyuntor diferencial tetrapolar Steck línea SDR.",
+        imagen: "assets/images/productos/producto025.png",
+        caracteristicas: [
+            "4 polos",
+            "25A",
+            "Sensibilidad 30mA",
+            "Montaje riel DIN"
+        ]
+    },
+    {
+        id: 26,
+        nombre: "Diferencial Zoloda RCCB 2P",
+        categoria: "proteccion",
+        descripcion: "Disyuntor diferencial bipolar Zoloda para protección contra corrientes de fuga.",
+        imagen: "assets/images/productos/producto026.png",
+        caracteristicas: [
+            "Bipolar",
+            "40A",
+            "Sensibilidad 30mA",
+            "Montaje riel DIN"
         ]
     }
 ];
@@ -168,12 +350,10 @@ const productos = [
 const categorias = [
     { id: 'todos', nombre: 'Todos', icono: 'fa-th-large' },
     { id: 'cables', nombre: 'Cables', icono: 'fa-plug' },
-    { id: 'tableros', nombre: 'Tableros', icono: 'fa-server' },
     { id: 'proteccion', nombre: 'Protección', icono: 'fa-shield-alt' },
     { id: 'iluminacion', nombre: 'Iluminación', icono: 'fa-lightbulb' },
-    { id: 'canalizacion', nombre: 'Canalización', icono: 'fa-route' },
-    { id: 'accesorios', nombre: 'Accesorios', icono: 'fa-tools' },
-    { id: 'control', nombre: 'Control', icono: 'fa-sliders-h' }
+    { id: 'control', nombre: 'Control', icono: 'fa-sliders-h' },
+    { id: 'accesorios', nombre: 'Accesorios', icono: 'fa-tools' }
 ];
 
 // Variables globales
