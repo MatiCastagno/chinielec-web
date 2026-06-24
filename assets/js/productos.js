@@ -491,6 +491,7 @@ function renderProductosDestacados() {
     });
 
     container.innerHTML = html;
+    initScrollReveal();
 }
 
 /* === SCROLL REVEAL === */
